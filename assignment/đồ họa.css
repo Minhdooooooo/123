@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-size: 32px;
+    font-weight: bold;
+    background-image: url('480438993_606034685557422_6749812513174451598_n.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Adjust the height as needed */
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f28e18;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background: white;
+    color: #f28e18;
+    border-radius: 5px;
+}
+.content {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+article {
+    flex: 3;
+    padding: 20px;
+    background: white;
+}
+aside {
+    flex: 1;
+    background: #ececec;
+    padding: 20px;
+    border-left: 2px solid #ddd;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #f28e18;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+iframe[name=page] {
+    width: 100%;
+    min-height: 400px;
+}
+.menu {
+    background-color: #f28e18;
+    text-align: center;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu ul li {
+    position: relative;
+    display: inline-block;
+}
+.menu ul .thêm {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: orange;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.menu ul li a:hover {
+    background-color: white;
+    color: #f28e18;
+    border-radius: 5px;
+}
+.thêm {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.thêm li {
+    display: block;
+}
+.thêm li a {
+    display: block;
+    padding: 10px;
+    color: #f28e18;
+    text-decoration: none;
+}
+.thêm li a:hover {
+    background-color: #f28e18;
+    color: white;
+}
+.menu ul li:hover .thêm {
+    display: block;
+}
